@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Sandrilla Arul - Software Engineer specializing in Java, Python, C, Web Development, and Smart Systems.">
+  <meta name="author" content="Sandrilla Arul">
+  <title>Sandrilla Arul | Software Engineer</title>
+  <!-- Google Fonts: 8-Bit Pixel Fonts + Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="has-vertical-nav">
+
+  <!-- ======================================================== -->
+  <!-- MOBILE TOP HEADER (VISIBLE ON SMALL SCREENS ONLY) -->
+  <!-- ======================================================== -->
+  <header id="mobile-top-bar" class="mobile-top-bar">
+    <div class="mobile-header-inner">
+      <a href="#hero" class="mobile-brand">
+        <span class="pixel-icon">&lt;/&gt;</span>
+        <span class="brand-text">SANDRILLA.DEV</span>
+      </a>
+      <button id="mobile-nav-toggle" class="pixel-hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="vertical-navbar">
+        <span class="menu-icon" aria-hidden="true">&#9776;</span>
+        <span class="menu-label">MENU</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Backdrop Overlay -->
+  <div id="nav-backdrop" class="nav-backdrop" aria-hidden="true"></div>
+
+  <!-- ======================================================== -->
+  <!-- VERTICAL PIXEL NAVIGATION BAR (LEFT SIDE) -->
+  <!-- ======================================================== -->
+  <aside id="vertical-navbar" class="pixel-sidebar-nav" aria-label="Main Navigation">
+    <div class="sidebar-inner">
+
+      <!-- Sidebar Top / Brand -->
+      <div class="sidebar-brand-box">
+        <a href="#hero" class="sidebar-brand-link" id="sidebar-logo">
+          <div class="pixel-avatar-mini" aria-hidden="true">
+            <span class="avatar-letter">S</span>
+          </div>
+          <div class="brand-meta">
+            <span class="brand-title">SANDRILLA</span>
+            <span class="brand-sub">LVL.2026 ENG</span>
+          </div>
+        </a>
+        <div class="sidebar-status-pill">
+          <span class="status-blinker" aria-hidden="true"></span>
+          <span class="status-text">ONLINE</span>
+        </div>
+      </div>
+
+      <!-- Navigation Section Label -->
+      <div class="sidebar-nav-header">
+        <span class="nav-header-text">QUEST LOG / NAV</span>
+      </div>
+
+      <!-- Primary Vertical Navigation Links -->
+      <nav id="site-nav" class="sidebar-menu-nav" aria-label="Site Sections">
+        <ul class="sidebar-links-list">
+          <li class="nav-item">
+            <a href="#hero" class="sidebar-link active" id="nav-home">
+              <span class="link-icon" aria-hidden="true">&#127968;</span>
+              <span class="link-label">Home</span>
+              <span class="pixel-arrow" aria-hidden="true">&#9654;</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="sidebar-link" id="nav-about">
+              <span class="link-icon" aria-hidden="true">&#128100;</span>
+              <span class="link-label">About Me</span>
+              <span class="pixel-arrow" aria-hidden="true">&#9654;</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="sidebar-link" id="nav-skills">
+              <span class="link-icon" aria-hidden="true">&#9889;</span>
+              <span class="link-label">Skills</span>
+              <span class="pixel-arrow" aria-hidden="true">&#9654;</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#timeline" class="sidebar-link" id="nav-timeline">
+              <span class="link-icon" aria-hidden="true">&#9203;</span>
+              <span class="link-label">Timeline</span>
+              <span class="pixel-arrow" aria-hidden="true">&#9654;</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="sidebar-link" id="nav-projects">
+              <span class="link-icon" aria-hidden="true">&#128188;</span>
+              <span class="link-label">Projects</span>
+              <span class="pixel-arrow" aria-hidden="true">&#9654;</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials" class="sidebar-link" id="nav-testimonials">
+              <span class="link-icon" aria-hidden="true">&#128172;</span>
+              <span class="link-label">Testimonials</span>
+              <span class="pixel-arrow" aria-hidden="true">&#9654;</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#chat" class="sidebar-link" id="nav-chat">
+              <span class="link-icon" aria-hidden="true">&#129302;</span>
+              <span class="link-label">Chat</span>
+              <span class="pixel-arrow" aria-hidden="true">&#9654;</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="sidebar-link" id="nav-contact">
+              <span class="link-icon" aria-hidden="true">&#9993;</span>
+              <span class="link-label">Contact</span>
+              <span class="pixel-arrow" aria-hidden="true">&#9654;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar Footer / Night Mode Toggle -->
+      <div class="sidebar-footer">
+        <div class="theme-toggle-wrapper">
+          <button id="night-mode-toggle" class="pixel-sidebar-toggle" type="button" aria-label="Toggle Night Mode" aria-pressed="false">
+            <span class="toggle-icon" id="theme-toggle-icon" aria-hidden="true">&#9790;</span>
+            <span class="toggle-text" id="theme-toggle-text">NIGHT MODE</span>
+          </button>
+        </div>
+        <div class="sidebar-copyright">
+          <span>&copy; 2026 Sandrilla</span>
+        </div>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- ======================================================== -->
+  <!-- MAIN CONTENT CONTAINER (OFFSET FOR VERTICAL NAVBAR) -->
+  <!-- ======================================================== -->
+  <div class="page-content-wrapper">
+    <main id="main-content">
+
+      <!-- ====================================================== -->
+      <!-- SECTION: HERO (PIXEL ART STYLE WITH BACKGROUND IMAGE) -->
+      <!-- ====================================================== -->
+      <section id="hero" class="section hero-section pixel-hero" aria-labelledby="hero-heading">
+        <!-- CRT scanline overlay effect -->
+        <div class="pixel-scanlines" aria-hidden="true"></div>
+        <!-- Soft ambient backdrop overlay for readability -->
+        <div class="pixel-backdrop-overlay" aria-hidden="true"></div>
+
+        <div class="container hero-container pixel-hero-container">
+          <!-- Pixel Dialogue Window -->
+          <div class="pixel-dialog-box">
+            <div class="pixel-window-bar">
+              <span class="pixel-window-title">&#128187; SANDRILLA_PORTFOLIO.EXE</span>
+              <div class="pixel-window-controls" aria-hidden="true">
+                <span class="win-btn win-min">_</span>
+                <span class="win-btn win-max">&#9633;</span>
+                <span class="win-btn win-close">&#10005;</span>
+              </div>
+            </div>
+
+            <div class="pixel-dialog-body">
+              <!-- Welcome Header -->
+              <div class="pixel-welcome-badge">
+                <span class="pixel-cursor">&#9654;</span>
+                <span class="welcome-tag">SYSTEM READY: WELCOME VISITOR</span>
+              </div>
+
+              <!-- Title -->
+              <h1 id="hero-heading" class="pixel-hero-title">
+                Hi, I'm <span class="pixel-title-glow">Sandrilla Arul</span>
+              </h1>
+
+              <!-- Tagline -->
+              <p class="pixel-hero-tagline">
+                &gt; Software Engineer &bull; Full-Stack Builder &bull; Tech Explorer
+              </p>
+
+              <p class="pixel-hero-desc">
+                Building efficient software architectures, IoT automation, and modern web applications with clean algorithms and pixel-perfect design.
+              </p>
+
+              <!-- Retro RPG Stats Bar -->
+              <div class="pixel-rpg-hud" aria-label="Engineer Stats">
+                <div class="hud-stat">
+                  <span class="stat-name">CLASS:</span>
+                  <span class="stat-value">DEV</span>
+                </div>
+                <div class="hud-stat">
+                  <span class="stat-name">EXP:</span>
+                  <div class="stat-bar" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100">
+                    <div class="stat-bar-fill" style="width: 84%;"></div>
+                  </div>
+                  <span class="stat-value">CGPA 8.4</span>
+                </div>
+                <div class="hud-stat">
+                  <span class="stat-name">QUEST:</span>
+                  <span class="stat-value pulse-text">OPEN FOR WORK</span>
+                </div>
+              </div>
+
+              <!-- Pixel Action Buttons -->
+              <div class="hero-actions pixel-actions">
+                <a href="#projects" class="pixel-btn pixel-btn-primary" id="cta-view-projects">
+                  &#9654; EXPLORE WORK
+                </a>
+                <a href="#contact" class="pixel-btn pixel-btn-secondary" id="cta-contact-me">
+                  &#9993; CONTACT ME
+                </a>
+                <a href="Resume.pdf" class="pixel-btn pixel-btn-gold" id="cta-resume" download="Sandrilla_Arul_Resume.pdf">
+                  &#128190; RESUME.PDF
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pixel Character Avatar Card -->
+          <div class="hero-visual" id="hero-visual-wrapper">
+            <div class="pixel-avatar-card">
+              <div class="avatar-card-header">
+                <span class="card-chip">&#9889; PLAYER 1</span>
+                <span class="card-status">HP: 100/100</span>
+              </div>
+              
+              <div class="avatar-img-frame">
+                <img 
+                  src="WhatsApp Image 2026-10-07 at 2.45.53 PM.jpeg" 
+                  alt="Portrait of Sandrilla Arul, Software Engineer" 
+                  class="avatar-photo"
+                  id="hero-profile-img"
+                  loading="eager"
+                >
+                <div class="frame-scan-overlay" aria-hidden="true"></div>
+              </div>
+
+              <div class="avatar-card-footer">
+                <div class="card-hud-row">
+                  <span class="hud-label">ROLE:</span>
+                  <span class="hud-data">Software Engineer</span>
+                </div>
+                <div class="card-hud-row">
+                  <span class="hud-label">STACK:</span>
+                  <span class="hud-data">Java / Python / Web</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====================================================== -->
+      <!-- SECTION: ABOUT -->
+      <!-- ====================================================== -->
+      <section id="about" class="section about-section" aria-labelledby="about-heading">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Get to know me</p>
+            <h2 id="about-heading" class="section-title">About Me</h2>
+          </div>
+          
+          <div class="about-grid">
+            <div class="about-text">
+              <p class="lead-text">
+                I am a Computer Science and Engineering student at Adichunchanagiri Institute of Technology with a strong foundation in software development and problem solving.
+              </p>
+              <p>
+                My academic and project journey focuses on mastering core programming paradigms like <strong>Object-Oriented Programming (OOP)</strong> and engineering impactful tools. Recently, I developed a <strong>Smart Irrigation</strong> model aimed at automating water management and sustainability for agriculture.
+              </p>
+              <p>
+                I thrive in collaborative environments, continuously seeking practical software development opportunities to apply my technical knowledge and learn cutting-edge industry practices.
+              </p>
+              <div class="about-meta-list">
+                <div class="meta-item">
+                  <span class="meta-label">Location:</span>
+                  <span class="meta-value">Karnataka, India</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Degree:</span>
+                  <span class="meta-value">B.E. in Computer Science &amp; Engineering</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Academic Standing:</span>
+                  <span class="meta-value">CGPA 8.4</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Highlight Cards -->
+            <div class="about-cards">
+              <div class="info-card">
+                <div class="card-icon">&#127891;</div>
+                <h3>Academic Excellence</h3>
+                <p>Maintaining a strong 8.4 CGPA in B.E. Computer Science and Engineering.</p>
+              </div>
+              <div class="info-card">
+                <div class="card-icon">&#9881;</div>
+                <h3>Core Foundations</h3>
+                <p>Deep commitment to Object-Oriented Programming principles, algorithms, and clean system architecture.</p>
+              </div>
+              <div class="info-card">
+                <div class="card-icon">&#127793;</div>
+                <h3>Applied Solutions</h3>
+                <p>Passionate about building tech that solves real community challenges like water conservation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================== -->
+      <!-- SECTION: SKILLS -->
+      <!-- ====================================================== -->
+      <section id="skills" class="section skills-section" aria-labelledby="skills-heading">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Capabilities</p>
+            <h2 id="skills-heading" class="section-title">Technical Skills</h2>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Category 1: Programming Languages -->
+            <div class="skill-category-card" id="skills-languages">
+              <div class="category-header">
+                <span class="cat-icon">&#128187;</span>
+                <h3 class="skill-category-title">Programming Languages</h3>
+              </div>
+              <ul class="skill-list">
+                <li class="skill-badge"><span class="badge-bullet"></span>Java</li>
+                <li class="skill-badge"><span class="badge-bullet"></span>Python</li>
+                <li class="skill-badge"><span class="badge-bullet"></span>C</li>
+              </ul>
+            </div>
+
+            <!-- Category 2: Web & Frontend -->
+            <div class="skill-category-card" id="skills-web">
+              <div class="category-header">
+                <span class="cat-icon">&#127760;</span>
+                <h3 class="skill-category-title">Web & Frontend</h3>
+              </div>
+              <ul class="skill-list">
+                <li class="skill-badge"><span class="badge-bullet"></span>HTML5 / Semantic Markup</li>
+                <li class="skill-badge"><span class="badge-bullet"></span>CSS3 &amp; Modern Layouts</li>
+                <li class="skill-badge"><span class="badge-bullet"></span>Responsive UI Design</li>
+              </ul>
+            </div>
+
+            <!-- Category 3: Backend & Core Concepts -->
+            <div class="skill-category-card" id="skills-core">
+              <div class="category-header">
+                <span class="cat-icon">&#9881;</span>
+                <h3 class="skill-category-title">Core & Backend</h3>
+              </div>
+              <ul class="skill-list">
+                <li class="skill-badge"><span class="badge-bullet"></span>Object-Oriented Programming (OOP)</li>
+                <li class="skill-badge"><span class="badge-bullet"></span>Java Backend Development</li>
+                <li class="skill-badge"><span class="badge-bullet"></span>Data Structures & Logic</li>
+              </ul>
+            </div>
+
+            <!-- Category 4: Workflow & Version Control -->
+            <div class="skill-category-card" id="skills-tools">
+              <div class="category-header">
+                <span class="cat-icon">&#128295;</span>
+                <h3 class="skill-category-title">Tools & Development</h3>
+              </div>
+              <ul class="skill-list">
+                <li class="skill-badge"><span class="badge-bullet"></span>Git &amp; GitHub</li>
+                <li class="skill-badge"><span class="badge-bullet"></span>VS Code &amp; IDEs</li>
+                <li class="skill-badge"><span class="badge-bullet"></span>Problem Solving</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================== -->
+      <!-- SECTION: TIMELINE -->
+      <!-- ====================================================== -->
+      <section id="timeline" class="section timeline-section" aria-labelledby="timeline-heading">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Milestones</p>
+            <h2 id="timeline-heading" class="section-title">Timeline & Education</h2>
+          </div>
+
+          <div class="timeline-container">
+            <article class="timeline-item" id="timeline-education">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <header class="timeline-header">
+                  <span class="timeline-date">2025 &ndash; 2029</span>
+                  <h3 class="timeline-role">B.E. in Computer Science and Engineering</h3>
+                  <p class="timeline-company">Adichunchanagiri Institute of Technology, Chikkamagaluru, Karnataka</p>
+                </header>
+                <div class="timeline-body">
+                  <p>
+                    Pursuing comprehensive computer science studies encompassing algorithms, OOP architectures, software engineering, and systems programming.
+                  </p>
+                  <div class="timeline-achievement">
+                    <strong>Academic Merit:</strong> Maintained a stellar CGPA of <strong>8.4</strong>.
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item" id="timeline-experience">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <header class="timeline-header">
+                  <span class="timeline-date">Current Focus</span>
+                  <h3 class="timeline-role">Aspiring Software Development Engineer</h3>
+                  <p class="timeline-company">Practical Project Building &amp; Seeking Opportunities</p>
+                </header>
+                <div class="timeline-body">
+                  <p>
+                    Actively building applied software systems, collaborating on technical projects, and seeking software development internships/opportunities to translate technical concepts into production-grade solutions.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================== -->
+      <!-- SECTION: PROJECTS -->
+      <!-- ====================================================== -->
+      <section id="projects" class="section projects-section" aria-labelledby="projects-heading">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Portfolio</p>
+            <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Featured Project: Smart Irrigation -->
+            <article class="project-card featured" id="project-smart-irrigation">
+              <div class="project-header">
+                <span class="project-tag-pill">Agricultural Tech</span>
+                <span class="project-duration">2 Months Duration</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Smart Irrigation System</h3>
+                <p class="project-description">
+                  Developed an intelligent smart irrigation model engineered to support efficient, automated water management for agricultural applications. Implemented algorithmic workflows to measure environmental conditions and optimize water allocation, reducing waste and supporting sustainable farming.
+                </p>
+                <ul class="project-tags" aria-label="Key concepts used">
+                  <li class="project-tag">Workflow Design</li>
+                  <li class="project-tag">Problem Solving</li>
+                  <li class="project-tag">Automation Logic</li>
+                  <li class="project-tag">Sustainability</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/arulsandrilla" class="project-link" target="_blank" rel="noopener noreferrer">
+                    <span>View Repository &rarr;</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Secondary Project Card -->
+            <article class="project-card" id="project-oop-solutions">
+              <div class="project-header">
+                <span class="project-tag-pill">Software Design</span>
+                <span class="project-duration">Core Development</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">OOP Software Implementations</h3>
+                <p class="project-description">
+                  Constructed modular Java and Python software programs leveraging key Object-Oriented principles (Inheritance, Polymorphism, Encapsulation, Abstraction) for reliable data processing.
+                </p>
+                <ul class="project-tags" aria-label="Technologies used">
+                  <li class="project-tag">Java</li>
+                  <li class="project-tag">Python</li>
+                  <li class="project-tag">OOP Paradigms</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/arulsandrilla" class="project-link" target="_blank" rel="noopener noreferrer">
+                    <span>GitHub Repositories &rarr;</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================== -->
+      <!-- SECTION: TESTIMONIALS (NEW SECTION FOR VERTICAL NAVBAR) -->
+      <!-- ====================================================== -->
+      <section id="testimonials" class="section testimonials-section" aria-labelledby="testimonials-heading">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Peer &amp; Mentor Praise</p>
+            <h2 id="testimonials-heading" class="section-title">Testimonials</h2>
+          </div>
+
+          <div class="testimonials-grid">
+            <!-- Testimonial 1 -->
+            <article class="pixel-testimonial-card">
+              <div class="testimonial-header">
+                <div class="pixel-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="testimonial-role-badge">PROJECT LEAD</span>
+              </div>
+              <p class="testimonial-quote">
+                &ldquo;Sandrilla demonstrated exceptional clarity and logic while designing the workflows for the Smart Irrigation model. Her dedication to writing maintainable, clean code is inspiring.&rdquo;
+              </p>
+              <footer class="testimonial-author">
+                <div class="author-avatar">&#128104;&#8205;&#128187;</div>
+                <div class="author-info">
+                  <strong class="author-name">Project Collaborator</strong>
+                  <span class="author-title">AgriTech Systems</span>
+                </div>
+              </footer>
+            </article>
+
+            <!-- Testimonial 2 -->
+            <article class="pixel-testimonial-card">
+              <div class="testimonial-header">
+                <div class="pixel-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="testimonial-role-badge">MENTOR</span>
+              </div>
+              <p class="testimonial-quote">
+                &ldquo;A consistent high performer with an 8.4 CGPA. Sandrilla possesses a strong grasp of Object-Oriented paradigms and approaches software problems with curiosity and technical precision.&rdquo;
+              </p>
+              <footer class="testimonial-author">
+                <div class="author-avatar">&#128105;&#8205;&#127979;</div>
+                <div class="author-info">
+                  <strong class="author-name">Faculty Mentor</strong>
+                  <span class="author-title">CSE Department, AIT</span>
+                </div>
+              </footer>
+            </article>
+
+            <!-- Testimonial 3 -->
+            <article class="pixel-testimonial-card">
+              <div class="testimonial-header">
+                <div class="pixel-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="testimonial-role-badge">HACKATHON TEAM</span>
+              </div>
+              <p class="testimonial-quote">
+                &ldquo;A fantastic teammate who stays calm under tight sprint deadlines. Her ability to synthesize complex requirements into working software makes her an asset to any engineering squad.&rdquo;
+              </p>
+              <footer class="testimonial-author">
+                <div class="author-avatar">&#128640;</div>
+                <div class="author-info">
+                  <strong class="author-name">Engineering Peer</strong>
+                  <span class="author-title">Hackathon Cohort</span>
+                </div>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================== -->
+      <!-- SECTION: CHAT (INTERACTIVE TERMINAL / BOT) -->
+      <!-- ====================================================== -->
+      <section id="chat" class="section chat-section" aria-labelledby="chat-heading">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Interactive Assistant</p>
+            <h2 id="chat-heading" class="section-title">Terminal &amp; Quick Chat</h2>
+          </div>
+
+          <div class="pixel-terminal-wrapper">
+            <div class="terminal-bar">
+              <span class="terminal-title">&#128187; SANDRILLA-BOT_v1.0.sh</span>
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+            </div>
+
+            <!-- Chat Output Log -->
+            <div class="terminal-window" id="chat-log" role="log" aria-live="polite">
+              <div class="chat-msg bot-msg">
+                <span class="msg-sender">[SANDRILLA-BOT]:</span>
+                <span class="msg-text">Welcome to Sandrilla's interactive terminal! How can I assist you today? Select a prompt below or type your question:</span>
+              </div>
+            </div>
+
+            <!-- Quick Action Prompts -->
+            <div class="terminal-prompts">
+              <button type="button" class="prompt-chip" data-query="projects">
+                &#9654; Tell me about Smart Irrigation
+              </button>
+              <button type="button" class="prompt-chip" data-query="skills">
+                &#9654; What is your technical stack?
+              </button>
+              <button type="button" class="prompt-chip" data-query="contact">
+                &#9654; How can I reach Sandrilla?
+              </button>
+            </div>
+
+            <!-- Interactive Terminal Input Form -->
+            <form id="terminal-form" class="terminal-form" onsubmit="event.preventDefault(); handleUserChat();">
+              <span class="terminal-prompt-symbol">&gt;</span>
+              <input 
+                type="text" 
+                id="terminal-input" 
+                class="terminal-input" 
+                placeholder="Type a command or message (e.g., 'resume', 'skills', 'hire')..."
+                autocomplete="off"
+                aria-label="Terminal input query"
+              >
+              <button type="submit" class="terminal-send-btn">&#9658; SEND</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================== -->
+      <!-- SECTION: CONTACT -->
+      <!-- ====================================================== -->
+      <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Let's Connect</p>
+            <h2 id="contact-heading" class="section-title">Get In Touch</h2>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info-panel">
+              <h3>Start a Conversation</h3>
+              <p>
+                I am eager to connect regarding software internships, collaborative projects, or tech discussions. Feel free to contact me directly.
+              </p>
+
+              <ul class="contact-info-list">
+                <li class="contact-info-item">
+                  <span class="info-icon">&#9993;</span>
+                  <div>
+                    <span class="info-label">Email</span>
+                    <a href="mailto:arulsandrilla@gmail.com" class="info-link">arulsandrilla@gmail.com</a>
+                  </div>
+                </li>
+                <li class="contact-info-item">
+                  <span class="info-icon">&#9742;</span>
+                  <div>
+                    <span class="info-label">Phone</span>
+                    <a href="tel:8088279639" class="info-link">+91 8088279639</a>
+                  </div>
+                </li>
+                <li class="contact-info-item">
+                  <span class="info-icon">&#127968;</span>
+                  <div>
+                    <span class="info-label">Location</span>
+                    <span>Karnataka, India</span>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="social-links-wrapper">
+                <h4>Find me online</h4>
+                <div class="social-buttons">
+                  <a href="https://www.linkedin.com/in/sandrilla-arul-072869397" class="social-btn" target="_blank" rel="noopener noreferrer" id="social-linkedin">
+                    LinkedIn
+                  </a>
+                  <a href="https://github.com/arulsandrilla" class="social-btn" target="_blank" rel="noopener noreferrer" id="social-github">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-panel">
+              <form id="contact-form" class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Sandrilla.');">
+                <div class="form-group">
+                  <label for="contact-name">Your Name</label>
+                  <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Your Email</label>
+                  <input type="email" id="contact-email" name="email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-subject">Subject</label>
+                  <input type="text" id="contact-subject" name="subject" placeholder="Project collaboration / Internship" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-message">Message</label>
+                  <textarea id="contact-message" name="message" rows="4" placeholder="Hello Sandrilla, I would like to discuss..." required></textarea>
+                </div>
+                <button type="submit" id="contact-submit" class="btn btn-primary btn-block">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ======================================================== -->
+    <!-- FOOTER -->
+    <!-- ======================================================== -->
+    <footer id="site-footer">
+      <div class="container footer-container">
+        <div class="footer-brand">
+          <span class="footer-logo">&lt;/&gt; Sandrilla Arul</span>
+          <p class="footer-bio">Software Engineer &amp; CS Student passionate about creating reliable technology.</p>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">&copy; 2026 Sandrilla Arul. All rights reserved.</p>
+          <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="#hero">Back to top &#8593;</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- CLIENT SCRIPTS: VERTICAL NAV, THEME & CHAT ASSISTANT -->
+  <!-- ======================================================== -->
+  <script>
+    // ----------------------------------------------------------
+    // 1. MOBILE VERTICAL NAVBAR TOGGLE & ACCESSIBILITY
+    // ----------------------------------------------------------
+    const mobileNavToggle = document.getElementById('mobile-nav-toggle');
+    const verticalNavbar = document.getElementById('vertical-navbar');
+    const navBackdrop = document.getElementById('nav-backdrop');
+    const sidebarLinks = document.querySelectorAll('.sidebar-link');
+
+    function toggleSidebar(open) {
+      const isExpanded = open !== undefined ? open : !verticalNavbar.classList.contains('is-open');
+      if (isExpanded) {
+        verticalNavbar.classList.add('is-open');
+        navBackdrop.classList.add('is-visible');
+        mobileNavToggle.setAttribute('aria-expanded', 'true');
+        document.body.classList.add('nav-locked');
+      } else {
+        verticalNavbar.classList.remove('is-open');
+        navBackdrop.classList.remove('is-visible');
+        mobileNavToggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('nav-locked');
+      }
+    }
+
+    if (mobileNavToggle) {
+      mobileNavToggle.addEventListener('click', () => toggleSidebar());
+    }
+
+    if (navBackdrop) {
+      navBackdrop.addEventListener('click', () => toggleSidebar(false));
+    }
+
+    // Close mobile sidebar on link click & keyboard ESC
+    sidebarLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth < 1024) {
+          toggleSidebar(false);
+        }
+      });
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && verticalNavbar.classList.contains('is-open')) {
+        toggleSidebar(false);
+      }
+    });
+
+    // ----------------------------------------------------------
+    // 2. SCROLL SPY: HIGHLIGHT ACTIVE LINK
+    // ----------------------------------------------------------
+    const observedSections = document.querySelectorAll('section[id]');
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -70% 0px',
+      threshold: 0
+    };
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const currentId = entry.target.getAttribute('id');
+          sidebarLinks.forEach(link => {
+            const href = link.getAttribute('href').replace('#', '');
+            if (href === currentId) {
+              link.classList.add('active');
+              link.setAttribute('aria-current', 'page');
+            } else {
+              link.classList.remove('active');
+              link.removeAttribute('aria-current');
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    observedSections.forEach(sec => sectionObserver.observe(sec));
+
+    // ----------------------------------------------------------
+    // 3. NIGHT MODE TOGGLE (MEDIA QUERY & SYSTEM DETECTED)
+    // ----------------------------------------------------------
+    const themeToggleBtn = document.getElementById('night-mode-toggle');
+    const themeIcon = document.getElementById('theme-toggle-icon');
+    const themeLabel = document.getElementById('theme-toggle-text');
+    const htmlElem = document.documentElement;
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function determineInitialTheme() {
+      const stored = localStorage.getItem('user-theme');
+      if (stored === 'dark' || stored === 'light') {
+        return stored;
+      }
+      return systemPrefersDark.matches ? 'dark' : 'light';
+    }
+
+    function renderTheme(theme, isUserManual = false) {
+      htmlElem.setAttribute('data-theme', theme);
+      const isDark = theme === 'dark';
+      themeToggleBtn.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+      themeIcon.innerHTML = isDark ? '&#9790;' : '&#9728;';
+      themeLabel.textContent = isDark ? 'NIGHT MODE' : 'DAY MODE';
+      themeToggleBtn.title = isUserManual 
+        ? `Mode: ${theme.toUpperCase()} (Manual)` 
+        : `Mode: ${theme.toUpperCase()} (Detected via Browser)`;
+    }
+
+    const currentTheme = determineInitialTheme();
+    renderTheme(currentTheme, !!localStorage.getItem('user-theme'));
+
+    systemPrefersDark.addEventListener('change', (e) => {
+      if (!localStorage.getItem('user-theme')) {
+        renderTheme(e.matches ? 'dark' : 'light', false);
+      }
+    });
+
+    themeToggleBtn.addEventListener('click', () => {
+      const activeTheme = htmlElem.getAttribute('data-theme') || (systemPrefersDark.matches ? 'dark' : 'light');
+      const toggled = activeTheme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('user-theme', toggled);
+      renderTheme(toggled, true);
+    });
+
+    // ----------------------------------------------------------
+    // 4. INTERACTIVE CHAT TERMINAL
+    // ----------------------------------------------------------
+    const chatLog = document.getElementById('chat-log');
+    const terminalInput = document.getElementById('terminal-input');
+    const promptChips = document.querySelectorAll('.prompt-chip');
+
+    const botKnowledge = {
+      projects: "Sandrilla designed the 'Smart Irrigation System' — an automated water management model for agriculture that optimizes resource allocation and minimizes waste.",
+      skills: "Her core competencies include Java, Python, C, Object-Oriented Programming (OOP), HTML5/CSS3, Git, and automated systems engineering.",
+      contact: "You can email Sandrilla at arulsandrilla@gmail.com, call +91 8088279639, or connect via LinkedIn and GitHub!",
+      resume: "Sandrilla maintains an 8.4 CGPA in B.E. Computer Science at AIT. You can download her CV directly from the hero section!",
+      about: "Sandrilla is an aspiring Software Engineer at Adichunchanagiri Institute of Technology, passionate about clean algorithms and impactful solutions."
+    };
+
+    function appendMessage(sender, text, isUser = false) {
+      const msgDiv = document.createElement('div');
+      msgDiv.className = `chat-msg ${isUser ? 'user-msg' : 'bot-msg'}`;
+      msgDiv.innerHTML = `<span class="msg-sender">[${sender}]:</span> <span class="msg-text">${text}</span>`;
+      chatLog.appendChild(msgDiv);
+      chatLog.scrollTop = chatLog.scrollHeight;
+    }
+
+    function handleBotReply(queryKey, rawText) {
+      setTimeout(() => {
+        let answer = "Command received. Feel free to explore my Projects, Skills, Timeline, or reach out directly through the Contact form!";
+        const lower = (queryKey || rawText || '').toLowerCase();
+        
+        if (lower.includes('project') || lower.includes('irrigation')) {
+          answer = botKnowledge.projects;
+        } else if (lower.includes('skill') || lower.includes('stack') || lower.includes('java')) {
+          answer = botKnowledge.skills;
+        } else if (lower.includes('contact') || lower.includes('reach') || lower.includes('email') || lower.includes('phone')) {
+          answer = botKnowledge.contact;
+        } else if (lower.includes('resume') || lower.includes('cv') || lower.includes('gpa')) {
+          answer = botKnowledge.resume;
+        } else if (lower.includes('about') || lower.includes('who')) {
+          answer = botKnowledge.about;
+        }
+
+        appendMessage('SANDRILLA-BOT', answer, false);
+      }, 400);
+    }
+
+    promptChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        const query = chip.getAttribute('data-query');
+        const label = chip.textContent.replace('▶', '').trim();
+        appendMessage('VISITOR', label, true);
+        handleBotReply(query, label);
+      });
+    });
+
+    function handleUserChat() {
+      const val = terminalInput.value.trim();
+      if (!val) return;
+      appendMessage('VISITOR', val, true);
+      terminalInput.value = '';
+      handleBotReply(null, val);
+    }
+  </script>
+</body>
+</html>
